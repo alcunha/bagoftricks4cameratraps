@@ -1,4 +1,6 @@
-# bags4cameratraps
+# Bag of tricks for long-tail visual recognition of animal species in camera-trap images
+
+This is the origin TensorFlow implementation for [Bag of tricks for long-tail visual recognition of animal species in camera-trap images](https://doi.org/10.1016/j.ecoinf.2023.102060)
 
 ### Requirements
 
@@ -8,6 +10,31 @@ Dependencies can be installed using the following command:
 ```bash
 pip install -r requirements.txt
 ```
+
+### Datasets
+
+### Training
+
+### Evaluation
+
+### Results
+
+All model checkpoints are available [here](https://drive.google.com/drive/folders/16N9f0Lbdv1p1oXdKOsCn6LKTYtiYqSiP?usp=sharing).
+
+### Citation
+
+If you find this code useful in your research, please consider citing:
+
+    @article{cunha2023bag,
+        title={Bag of tricks for long-tail visual recognition of animal species in camera-trap images},
+        author={Cunha, Fagner and dos Santos, Eulanda M and Colonna, Juan G},
+        journal={Ecological Informatics},
+        volume={76},
+        pages={102060},
+        year={2023},
+        publisher={Elsevier}
+    }
+
 
 ### Contact
 
