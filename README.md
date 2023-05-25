@@ -2,6 +2,10 @@
 
 This is the origin TensorFlow implementation for [Bag of tricks for long-tail visual recognition of animal species in camera-trap images](https://doi.org/10.1016/j.ecoinf.2023.102060)
 
+### The Square-root Sampling Branch Framework (SSB)
+
+![SSB - Square-root Sampling Branch Framework](bags4cameratraps/data/ssb.svg?raw=true)
+
 ### Requirements
 
 Prepare an environment with python=3.9, tensorflow=2.5.0
@@ -20,6 +24,9 @@ pip install -r requirements.txt
 ### Results
 
 All model checkpoints are available [here](https://drive.google.com/drive/folders/16N9f0Lbdv1p1oXdKOsCn6LKTYtiYqSiP?usp=sharing).
+
+#### Macro F1-Score for two-stage methods using the full image
+![Macro F1-Score for two-stage methods using the full image](bags4cameratraps/data/macro_f1_score.png?raw=true)
 
 ### Citation
 
