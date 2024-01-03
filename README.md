@@ -17,6 +17,14 @@ pip install -r requirements.txt
 
 ### Datasets
 
+[Caltech Camera Traps](http://lila.science/datasets/caltech-camera-traps), [Snapshot Serengeti](http://lila.science/datasets/snapshot-serengeti), [WCS Camera Traps](https://lila.science/datasets/wcscameratraps), and [Wellington Camera Traps](https://lila.science/datasets/wellingtoncameratraps) datasets can be downloaded from [Lila](http://lila.science/).
+
+We used the recommended Lila train/val/test partitions for splits based on locations (site). When the test split was not available, the validation set was used as the test set, and a minival set was held out from the training set. The used partitions are available in the `data` folder.
+
+As not all images were used from these datasets, we provide the lists of used images for each dataset [here](https://drive.google.com/drive/folders/1RWIL2695SqNeqB9ZaR5TottVMk8A75_D?usp=sharing).
+
+We also provide scripts for resizing images and converting the dataset to tfrecords format. See the `dataset_tools` folder.
+
 ### Training
 
 #### Classifiers
