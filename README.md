@@ -66,6 +66,21 @@ SSB is trained in a two-stage fashion:
 
 ### Evaluation
 
+To evaluate a classifier, use the script `eval.py`:
+```bash
+python eval.py --model_name=efficientnetv2-b2 \
+    --input_size=260 \
+    --num_classes=19 \
+    --model_weights=PATH_TO_BE_CONFIGURED/effv2b2_caltech_bboxrepre_10fev/ckp \
+    --input_scale_mode=tf \
+    --train_json=PATH_TO_BE_CONFIGURED/caltech_images_20211210ufam_train.json \
+    --test_json=PATH_TO_BE_CONFIGURED/caltech_images_20211210ufam_val.json \
+    --dataset_dir=PATH_TO_BE_CONFIGURED/ \
+    --results_file=PATH_TO_BE_CONFIGURED/effv2b2_caltech_bboxrepre_10fev_val_results.json
+```
+
+To evaluate SSB, use the option `--model_weights` to pass the weights for the first stage and `--sqrt_model_weights` for the second stage weights (using square-root re-sampling).
+
 ### Results
 
 All model checkpoints are available [here](https://drive.google.com/drive/folders/16N9f0Lbdv1p1oXdKOsCn6LKTYtiYqSiP?usp=sharing).
